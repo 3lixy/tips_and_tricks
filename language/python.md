@@ -1,5 +1,9 @@
 # TEXT
 
+##### List all releases for pypi package
+
+https://pypi.python.org/simple/<package_name>/
+
 ##### Python 2.4+,3.x portable excepton handling
 ```
 import sys
