@@ -1,6 +1,6 @@
 # TEXT
 
-##### Python 2.4+,3.x portable excepton handling
+##### Python 2.4+, 3.x portable excepton handling
 ```
 import sys
 try:
@@ -9,6 +9,22 @@ except Exception:
     t, e = sys.exc_info()[:2]
     print(e)
 ```
+
+##### String to Datetime
+
+from datetime import datetime
+```
+datetime_object = datetime.strptime('date time string', 'datetime format')
+```
+e.g. to convert 2001/11/01 14:12:00 to a datetime object
+```
+datetime_object = datetime.strptime('2001/11/01 14:12:00', '%Y/%m/%d %H:%M:%S')
+```
+Formats (2): https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior
+
+Formats (3): https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+
+
 ##### List all releases for pypi package
 
 https://pypi.python.org/simple/<package_name>/
