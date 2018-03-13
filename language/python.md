@@ -24,6 +24,17 @@ Formats (2): https://docs.python.org/2/library/datetime.html#strftime-and-strpti
 
 Formats (3): https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
 
+##### Datetime to Epoch
+
+(datetime.datetime(2012,04,01,0,0) - datetime.datetime(1970,1,1)).total_seconds()
+
+##### CSV Writing
+
+
+
+##### stdin json formatter
+
+cat file.json | python -m json.tool 
 
 ##### List all releases for pypi package
 
