@@ -27,3 +27,11 @@ select * from all_constraints
 where constraint_name = 'CONSTRAINT'
 ;
 ```
+
+##### Find invalid objects
+```
+SELECT owner, object_type, object_name
+FROM all_objects
+WHERE status = 'INVALID'
+;
+```
