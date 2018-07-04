@@ -32,4 +32,12 @@ filetype plugin on
 ```
 filetype indent on
 ```
+```
+
+##### Force vimdiff to wrap lines
+```
+au VimEnter * if &diff | execute 'windo set wrap' | endif
+```
+
+
 
