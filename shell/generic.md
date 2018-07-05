@@ -15,3 +15,6 @@ ps -eo pid,lstart,cmd
 ```
 ls -l /proc/ | grep PID
 ```
+
+##### put control char in shell
+press insert key on keyboard then ctrl-c or whichever control you want
