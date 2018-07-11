@@ -12,6 +12,6 @@ ifconfig
 
 ifconfig network-interface [ down | up ]
 
-##### list up / down interfaces
+##### list up / down interfaces [FreeBSD]
 
 ifconfig [ -d | -u ]

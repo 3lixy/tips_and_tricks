@@ -1,0 +1,31 @@
+# DIG
+
+##### get dns from root servers
+```
+dig +trace www.example.
+```
+
+##### get nameserver for a domain
+```
+dig subdomain.example.com ns
+```
+
+##### get nameserver for a domain specifying the nameserver
+```
+dig @ns2.google.com. google.com ns
+```
+
+##### get A (ipv4 ip) for a domain specifying the nameserver
+```
+dig @ns2.google.com. google.com A
+```
+
+##### get AAAA (ipv6 ip) for a domain specifying the nameserver
+```
+dig @ns2.google.com. google.com AAAA
+```
+
+##### get AAAA (ipv6 ip) for a domain specifying the nameserver with a terse answer.
+```
+dig @ns2.google.com. google.com AAAA +short
+```
