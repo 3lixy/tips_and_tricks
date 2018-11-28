@@ -35,3 +35,53 @@ FROM all_objects
 WHERE status = 'INVALID'
 ;
 ```
+##### Make HTTP request
+```
+select utl_http.request('http://example.com:80/') from dual;
+```
+
+##### Drop acl
+```
+BEGIN
+   DBMS_NETWORK_ACL_ADMIN.DROP_ACL (acl    => 'txti.xml' );
+END;
+/
+COMMIT;
+```
+
+##### Drop acl oracle 11
+```
+dbms_network_acl_admin.drop_acl('www.xml');
+COMMIT;
+```
+
+##### Create acl oracle 11
+```
+dbms_network_acl_admin.create_acl(
+     acl => 'www.xml',
+     description => 'WWW ACL',
+     principal => 'SCOTT',
+     is_grant => true,
+     privilege => 'connect'
+ );
+```
+
+##### Assign hosts and ports to the ACL oracle 11
+```
+dbms_network_acl_admin.assign_acl(
+     acl => 'www.xml',
+     host => '*',
+     lower_port => 80
+ );
+```
+
+##### Add users to the ACL oracle 11
+```
+dbms_network_acl_admin.add_privilege(
+     acl => 'www.xml',
+     principal => 'OE',
+     is_grant => true,
+     privilege => 'connect'
+ );
+```
+
