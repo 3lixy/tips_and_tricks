@@ -32,7 +32,6 @@ filetype plugin on
 ```
 filetype indent on
 ```
-```
 
 ##### Force vimdiff to wrap lines
 ```
