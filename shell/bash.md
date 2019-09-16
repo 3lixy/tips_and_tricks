@@ -26,3 +26,9 @@ check-ssh-agent || {
     echo "$SSH_AUTH_SOCK" > ~/.tmp/ssh-agent.env
 }
 ```
+
+##### PS1 Escaping
+For reference here is the info on bash escaping: 
+http://tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html. 
+If one was to use a script as PS1 you would need to use \001 and \002 instead of 
+\\[ and \\] as detailed here: https://wiki.archlinux.org/index.php/Bash/Prompt_customization
