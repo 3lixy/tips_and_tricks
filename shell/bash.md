@@ -35,7 +35,7 @@ HISTTIMEFORMAT="%d/%m/%y %T "
 ```
 
 ##### Vault SSH login
-
+```
 export ssh_key_path="$HOME/.ssh/"
 export vault_signed_key_file="id_rsa-signed.pub"
 
@@ -107,6 +107,7 @@ export -f vssh
 export -f vscp
 export -f vr
 export VAULT_ADDR='https://vault.example.com:8200'
+```
 
 ##### PS1 Escaping
 For reference here is the info on bash escaping: 
